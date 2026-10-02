@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ferretería y Materiales El Cholo - Catálogo de Herramientas</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome 6 (para los íconos fa-solid) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Archivo CSS Personalizado -->
+    <link rel="stylesheet" href="indexcss.css">
+</head>
+<body class="bg-light">
+
+    <!-- Encabezado Principal -->
+    <header class="cholo-header text-white p-3 p-md-4 shadow mb-4">
+        <div class="container d-flex align-items-center justify-content-between flex-wrap gap-3">
+            <div class="d-flex align-items-center gap-3">
+                    <img src="logo.jpg" alt="Logo Ferretería El Cholo" class="rounded-circle logo-glow" style="height: 75px; width: 75px; object-fit: cover;">
+                <div>
+                    <h1 class="h3 m-0 font-brand text-warning">Ferretería El Cholo</h1>
+                    <span class="badge bg-danger text-white">Catálogo de Herramientas</span>
+                </div>
+            </div>
+            <div>
+                <a href="index.html" class="btn btn-outline-light btn-sm fw-bold"><i class="fa-solid fa-house me-1"></i> Volver al Inicio</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="container mb-5">
+        <div class="main-card p-4 p-md-5">
+            <div id="page-herramientas" class="page-section active">
+                <h2 class="font-brand text-dark"><i class="fa-solid fa-screwdriver-wrench me-2 text-warning"></i>Catálogo de Herramientas</h2>
+                <div class="section-divider my-3 border-bottom border-2 border-warning" style="width: 80px;"></div>
+                <p class="lead text-secondary">Explora nuestra amplia selección de herramientas manuales, eléctricas e industriales para todo tipo de obra o remodelación.</p>
+
+                <!-- Tarjetas de Herramientas -->
+                 
+                <div class="row g-3">
+                    <!-- Taladro Percutor -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="https://images.unsplash.com/photo-1572981779307-38b8cabb2407?auto=format&fit=crop&w=500&q=80" class="card-img-top img-fluid rounded-top" alt="Taladro industrial">
+                            <div class="card-body d-flex flex-column">
+                                <div>
+                                    <span class="badge bg-secondary mb-2">Eléctrica</span>
+                                    <h5 class="card-title font-brand">Taladro </h5>
+                                    <p class="card-text text-muted small">Ideal para perforación en concreto, acero y mampostería pesada.</p>
+                                </div>
+                                <div class="mt-auto pt-2">
+                                    <p class="fw-bold text-danger fs-5 mb-2">$1,850 MXN</p>
+                                    <button class="btn btn-outline-warning w-100 btn-sm text-dark fw-bold" onclick="showToast('Taladro Percutor añadido a cotización')">
+                                        <i class="fa-solid fa-cart-plus me-1"></i> Cotizar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Juego de Herramientas -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=500&q=80" class="card-img-top img-fluid rounded-top" alt="Juego de herramientas">
+                            <div class="card-body d-flex flex-column">
+                                <div>
+                                    <span class="badge bg-secondary mb-2">Manual</span>
+                                    <h5 class="card-title font-brand">Juego de Herramientas 12 Pzs</h5>
+                                    <p class="card-text text-muted small">Maletín completo de llaves, dados y desarmadores de cromo vanadio.</p>
+                                </div>
+                                <div class="mt-auto pt-2">
+                                    <p class="fw-bold text-danger fs-5 mb-2">$1,290 MXN</p>
+                                    <button class="btn btn-outline-warning w-100 btn-sm text-dark fw-bold" onclick="showToast('Juego de Herramientas añadido a cotización')">
+                                        <i class="fa-solid fa-cart-plus me-1"></i> Cotizar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pala Cuadrada -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="pala.jpg" class="card-img-top img-fluid rounded-top" alt="Pala Cuadrada">
+                            <div class="card-body d-flex flex-column">
+                                <div>
+                                    <span class="badge bg-secondary mb-2">Construcción</span>
+                                    <h5 class="card-title font-brand">Pala Cuadrada </h5>
+                                    <p class="card-text text-muted small">Hoja de acero al carbono templado, ideal para cargar arena y concreto.</p>
+                                </div>
+                                <div class="mt-auto pt-2">
+                                    <p class="fw-bold text-danger fs-5 mb-2">$280 MXN</p>
+                                    <button class="btn btn-outline-warning w-100 btn-sm text-dark fw-bold" onclick="showToast('Pala Cuadrada añadida a cotización')">
+                                        <i class="fa-solid fa-cart-plus me-1"></i> Cotizar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pico zapapico -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="pico.jpg" class="card-img-top img-fluid rounded-top" alt="Pico Zapapico">
+                            <div class="card-body d-flex flex-column">
+                                <div>
+                                    <span class="badge bg-secondary mb-2">Excavación</span>
+                                    <h5 class="card-title font-brand">Pico </h5>
+                                    <p class="card-text text-muted small">Cabeza de acero forjado con escoplo y punta para excavación en suelo duro.</p>
+                                </div>
+                                <div class="mt-auto pt-2">
+                                    <p class="fw-bold text-danger fs-5 mb-2">$420 MXN</p>
+                                    <button class="btn btn-outline-warning w-100 btn-sm text-dark fw-bold" onclick="showToast('Pico Zapapico añadido a cotización')">
+                                        <i class="fa-solid fa-cart-plus me-1"></i> Cotizar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carretilla -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="carreta.jpg" class="card-img-top img-fluid rounded-top" alt="Carretilla Uso Rudo">
+                            <div class="card-body d-flex flex-column">
+                                <div>
+                                    <span class="badge bg-secondary mb-2">Carga</span>
+                                    <h5 class="card-title font-brand">Carretilla Uso Rudo </h5>
+                                    <p class="card-text text-muted small">Concha de lámina calibre grueso y rueda neumática reforzada para obra.</p>
+                                </div>
+                                <div class="mt-auto pt-2">
+                                    <p class="fw-bold text-danger fs-5 mb-2">$1,450 MXN</p>
+                                    <button class="btn btn-outline-warning w-100 btn-sm text-dark fw-bold" onclick="showToast('Carretilla añadida a cotización')">
+                                        <i class="fa-solid fa-cart-plus me-1"></i> Cotizar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Martillo de Uña -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="mar.jpg" class="card-img-top img-fluid rounded-top" alt="Martillo de Uña">
+                            <div class="card-body d-flex flex-column">
+                                <div>
+                                    <span class="badge bg-secondary mb-2">Carpintería</span>
+                                    <h5 class="card-title font-brand">Martillo de Uña 16 oz</h5>
+                                    <p class="card-text text-muted small">Mango de fibra de vidrio con grip antiderrapante para amortiguar el impacto.</p>
+                                </div>
+                                <div class="mt-auto pt-2">
+                                    <p class="fw-bold text-danger fs-5 mb-2">$195 MXN</p>
+                                    <button class="btn btn-outline-warning w-100 btn-sm text-dark fw-bold" onclick="showToast('Martillo de Uña añadido a cotización')">
+                                        <i class="fa-solid fa-cart-plus me-1"></i> Cotizar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mazo / Cincelador -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="mazo.jpg" class="card-img-top img-fluid rounded-top" alt="Mazo de Demolición">
+                            <div class="card-body d-flex flex-column">
+                                <div>
+                                    <span class="badge bg-secondary mb-2">Mazo</span>
+                                    <h5 class="card-title font-brand">Mazo </h5>
+                                    <p class="card-text text-muted small">Cabeza de acero de alto impacto con mango largo de fibra de vidrio.</p>
+                                </div>
+                                <div class="mt-auto pt-2">
+                                    <p class="fw-bold text-danger fs-5 mb-2">$540 MXN</p>
+                                    <button class="btn btn-outline-warning w-100 btn-sm text-dark fw-bold" onclick="showToast('Mazo de Octágono añadido a cotización')">
+                                        <i class="fa-solid fa-cart-plus me-1"></i> Cotizar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Flexómetro profesional -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="nivel.jpg" class="card-img-top img-fluid rounded-top" alt="Flexómetro">
+                            <div class="card-body d-flex flex-column">
+                                <div>
+                                    <span class="badge bg-secondary mb-2">Nivel</span>
+                                    <h5 class="card-title font-brand">Medidor</h5>
+                                </div>
+                                <div class="mt-auto pt-2">
+                                    <p class="fw-bold text-danger fs-5 mb-2">$210 MXN</p>
+                                    <button class="btn btn-outline-warning w-100 btn-sm text-dark fw-bold" onclick="showToast('Flexómetro añadido a cotización')">
+                                        <i class="fa-solid fa-cart-plus me-1"></i> Cotizar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="sierra.jpg" class="card-img-top img-fluid rounded-top" alt="Sierra circular">
+                            <div class="card-body d-flex flex-column">
+                                <div>
+                                    <span class="badge bg-secondary mb-2">Corte</span>
+                                    <h5 class="card-title font-brand">Sierra Circular 7-1/4"</h5>
+                                    <p class="card-text text-muted small">Motor de 1500W con guía láser para cortes limpios en madera.</p>
+                                </div>
+                                <div class="mt-auto pt-2">
+                                    <p class="fw-bold text-danger fs-5 mb-2">$2,100 MXN</p>
+                                    <button class="btn btn-outline-warning w-100 btn-sm text-dark fw-bold" onclick="showToast('Sierra Circular añadida a cotización')">
+                                        <i class="fa-solid fa-cart-plus me-1"></i> Cotizar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Contenedor para Notificación Toast (Mensaje de confirmación) -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="actionToast" class="toast align-items-center text-bg-dark border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body text-warning font-brand" id="toastMessage">
+                    Producto añadido a la cotización
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer class="text-center p-4 font-brand">
+        <div class="container">
+            <p class="mb-0 text-secondary">Copyright &copy; <time>2026</time> <strong>Ferretería El Cholo</strong>. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script JS para manejar la notificación Toast al dar clic en 'Cotizar' -->
+    <script>
+        function showToast(message) {
+            document.getElementById('toastMessage').innerText = message;
+            const toastElement = document.getElementById('actionToast');
+            const toast = new bootstrap.Toast(toastElement);
+            toast.show();
+        }
+    </script>
+</body>
+</html>

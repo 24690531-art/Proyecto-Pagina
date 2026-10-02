@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ferretería y Materiales El Cholo - Ofertas y Descuentos</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome 6 (para los íconos fa-solid) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Archivo CSS Personalizado (Corregido de index.c a indexcss.css) -->
+    <link rel="stylesheet" href="indexcss.css">
+</head>
+<body class="bg-light">
+
+    <!-- Encabezado Principal -->
+    <header class="cholo-header text-white p-3 p-md-4 shadow mb-4">
+        <div class="container d-flex align-items-center justify-content-between flex-wrap gap-3">
+            <div class="d-flex align-items-center gap-3">
+                    <img src="logo.jpg" alt="Logo Ferretería El Cholo" class="rounded-circle logo-glow" style="height: 75px; width: 75px; object-fit: cover;">
+                <div>
+                    <h1 class="h3 m-0 font-brand text-warning">Ferretería El Cholo</h1>
+                    <span class="badge bg-danger text-white">Ofertas y Descuentos</span>
+                </div>
+            </div>
+            <div>
+                <a href="index.html" class="btn btn-outline-light btn-sm fw-bold"><i class="fa-solid fa-house me-1"></i> Volver al Inicio</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="container mb-5">
+        <div class="main-card p-4 p-md-5">
+            <div id="page-ofertas" class="page-section active">
+                <h2 class="font-brand text-dark"><i class="fa-solid fa-tags me-2 text-warning"></i>Ofertas y Descuentos</h2>
+                <div class="section-divider my-3 border-bottom border-2 border-warning" style="width: 80px;"></div>
+
+                <!-- Banner Principal de Promoción -->
+                <div class="p-4 bg-light rounded-3 border shadow-sm mb-4">
+                    <span class="badge bg-danger mb-2 px-3 py-2 fs-6">Súper Promoción</span>
+                    <h3 class="fw-bold font-brand text-dark">¡Mes del Constructor en El Cholo!</h3>
+                    <p class="fs-5 text-secondary mb-0">Aprovecha descuentos exclusivos de hasta un 25% directo en marcas seleccionadas y materiales pesados por tonelada.</p>
+                </div>
+
+                <!-- Tarjetas de Promociones Específicas -->
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="card border-warning mb-3 shadow-sm h-100">
+                            <div class="card-header bg-warning text-dark fw-bold font-brand">
+                                <i class="fa-solid fa-gift me-2"></i>Obra Segura
+                            </div>
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title font-brand">En la compra de 10 Varillas</h5>
+                                    <p class="card-text text-muted">Te regalamos 2 bultos de crus azul o 1 rollo de malla gratis.</p>
+                                </div>
+                                <div class="mt-3">
+                                    <button onclick="navigateTo('contacto')" class="btn btn-dark btn-sm fw-bold font-brand">
+                                        <i class="fa-solid fa-circle-check me-1"></i> Aprovechar Oferta
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card border-danger mb-3 shadow-sm h-100">
+                            <div class="card-header bg-danger text-white fw-bold font-brand">
+                                <i class="fa-solid fa-bolt me-2"></i>Descuento Eléctrico
+                            </div>
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title font-brand">15% OFF en Herramientas </h5>
+                                    <p class="card-text text-muted">Aplica en esmeriladoras, rotomartillos y sierras circulares pagando en efectivo o transferencia.</p>
+                                </div>
+                                <div class="mt-3">
+                                    <button onclick="navigateTo('contacto')" class="btn btn-dark btn-sm fw-bold font-brand">
+                                        <i class="fa-solid fa-magnifying-glass me-1"></i> Consultar Modelos
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer class="text-center p-4 font-brand mt-auto">
+        <div class="container">
+            <p class="mb-0 text-secondary">Copyright &copy; <time>2026</time> <strong>Ferretería El Cholo</strong>. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script de redirección o navegación -->
+    <script>
+        function navigateTo(page) {
+            // Si tienes una página de contacto separada, redirige a ella; de lo contrario, abre una alerta/formulario.
+            window.location.href = page + ".html";
+        }
+    </script>
+</body>
+</html>

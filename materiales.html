@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ferretería y Materiales El Cholo - Catálogo de Materiales</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome 6 (para los íconos de fa-solid) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Archivo CSS Personalizado -->
+    <link rel="stylesheet" href="indexcss.css">
+</head>
+<body class="bg-light">
+
+    <!-- Encabezado Principal -->
+    <header class="cholo-header text-white p-3 p-md-4 shadow mb-4">
+        <div class="container d-flex align-items-center justify-content-between flex-wrap gap-3">
+            <div class="d-flex align-items-center gap-3">
+                    <img src="logo.jpg" alt="Logo Ferretería El Cholo" class="rounded-circle logo-glow" style="height: 75px; width: 75px; object-fit: cover;">
+                <div>
+                    <h1 class="h3 m-0 font-brand text-warning">Ferretería El Cholo</h1>
+                    <span class="badge bg-danger text-white">Materiales de Construcción</span>
+                </div>
+            </div>
+            <div>
+                <a href="index.html" class="btn btn-outline-light btn-sm fw-bold"><i class="fa-solid fa-house me-1"></i> Volver al Inicio</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="container mb-5">
+        <div class="main-card p-4 p-md-5">
+            <div id="page-materiales" class="page-section active">
+                <h2 class="font-brand text-dark"><i class="fa-solid fa-cubes-stacked me-2 text-warning"></i>Catálogo de Materiales de Construcción</h2>
+                <div class="section-divider my-3 border-bottom border-2 border-warning" style="width: 80px;"></div>
+                <p class="lead text-secondary">Suministro de aceros, agregados, cementos y blocks a granel o mayoreo para todo tipo de proyecto.</p>
+
+                <!-- Tabla de Materiales -->
+                <div class="table-responsive shadow-sm rounded mb-4">
+                    <table class="table table-striped table-hover table-bordered align-middle mb-0">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Código</th>
+                                <th>Producto / Insumo</th>
+                                <th>Presentación</th>
+                                <th>Especificación</th>
+                                <th>Precio</th>
+                                <th>Disponibilidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>MAT-001</strong></td>
+                                <td>Varilla Corrugada 3/8"</td>
+                                <td>Tramo 12m</td>
+                                <td>Grado 42 Structural</td>
+                                <td>$185 MXN</td>
+                                <td><span class="badge bg-success">En Stock</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>MAT-002</strong></td>
+                                <td>Arena Cernida de Mina</td>
+                                <td>Metro Cúbico (m³)</td>
+                                <td>Ideal para mezclas y mampostería</td>
+                                <td>$420 MXN</td>
+                                <td><span class="badge bg-success">En Stock</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>MAT-003</strong></td>
+                                <td>Grava Triturada 3/4"</td>
+                                <td>Metro Cúbico (m³)</td>
+                                <td>Limpia para colados de losa</td>
+                                <td>$460 MXN</td>
+                                <td><span class="badge bg-success">En Stock</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>MAT-004</strong></td>
+                                <td>Block Pesado 12x20x40</td>
+                                <td>Pieza individual</td>
+                                <td>Resistencia 90 kg/cm²</td>
+                                <td>$16.50 MXN</td>
+                                <td><span class="badge bg-success">En Stock</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>MAT-005</strong></td>
+                                <td>Cemento Gris 50kg</td>
+                                <td>Saco / Bulto</td>
+                                <td>Alta resistencia inicial</td>
+                                <td>$235 MXN</td>
+                                <td><span class="badge bg-success">En Stock</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Call to Action Flete -->
+                <div class="row align-items-center bg-light p-3 rounded border">
+                    <div class="col-md-8">
+                        <h5 class="font-brand"><i class="fa-solid fa-truck-pickup me-2 text-warning"></i>¿Necesitas viaje completo de arena o piedra?</h5>
+                        <p class="mb-0 text-muted small">Contamos con camiones de 7m³ y 14m³ con envío directo a tu obra.</p>
+                    </div>
+                    <div class="col-md-4 text-md-end mt-2 mt-md-0">
+                        <button class="btn btn-warning fw-bold text-dark font-brand" data-bs-toggle="modal" data-bs-target="#cotizacionModal">
+                            <i class="fa-solid fa-calculator me-1"></i> Cotizar Flete
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal para Cotización de Flete -->
+    <div class="modal fade" id="cotizacionModal" tabindex="-1" aria-labelledby="cotizacionModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title font-brand text-warning" id="cotizacionModalLabel"><i class="fa-solid fa-truck-fast me-2"></i>Cotizar Flete de Materiales</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="fleteNombre" class="form-label">Nombre o Empresa</label>
+                            <input type="text" class="form-control" id="fleteNombre" placeholder="Tu nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="fleteUbicacion" class="form-label">Dirección de Entrega</label>
+                            <input type="text" class="form-control" id="fleteUbicacion" placeholder="Colonia o Sector de la obra">
+                        </div>
+                        <div class="mb-3">
+                            <label for="fleteCapacidad" class="form-label">Volumen Estimado</label>
+                            <select class="form-select" id="fleteCapacidad">
+                                <option selected>Camión de 7 m³</option>
+                                <option value="1">Camión de 14 m³ (Tórton)</option>
+                                <option value="2">Múltiples Viajes</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-warning fw-bold font-brand" data-bs-dismiss="modal" onclick="alert('Solicitud enviada correctamente. Te contactaremos pronto.')">Enviar Solicitud</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer class="text-center p-4 font-brand mt-auto">
+        <div class="container">
+            <p class="mb-0 text-secondary">Copyright &copy; <time>2026</time> <strong>Ferretería El Cholo</strong>. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
