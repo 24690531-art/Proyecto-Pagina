@@ -120,6 +120,34 @@
         </div>
     </main>
 
+     <nav class="container my-3">
+            <div class="navbar-cholo p-2 d-flex justify-content-between align-items-center flex-wrap gap-2">
+                
+                <div class="d-flex align-items-center gap-2 flex-wrap">
+                    <a href="#" class="nav-link-cholo active">
+                        <i class="bi bi-house-door-fill me-2"></i>Inicio
+                    </a>
+
+                    <div class="dropdown">
+                        <button class="btn nav-link-cholo dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-list-task me-2"></i>    Menú
+                        </button>
+                        <ul class="dropdown-menu shadow" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="herramientas.html"><i class="bi bi-box-seam me-2"></i> Cemento y Herramientas</a></li>
+                            <li><a class="dropdown-item" href="materiales.html"><i class="bi bi-truck me-2"></i> Materiales Pesados</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="ofertas.html"><i class="bi bi-tags me-2"></i> Ofertas del Mes</a></li>
+                            <li><a class="dropdown-item" href="contacto.html"><i class="bi bi-telephone me-2"></i> Ubicación y Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-warning fw-bold font-brand" data-bs-toggle="modal" data-bs-target="#modalCotización">
+                    <i class="bi bi-file-earmark-text me-1"></i> Cotización Rápida
+                </button>
+            </div>
+        </nav>
+
     <!-- Modal para Cotización de Flete -->
     <div class="modal fade" id="cotizacionModal" tabindex="-1" aria-labelledby="cotizacionModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
